@@ -1,5 +1,5 @@
 import React from "react";
-import create from "zustand";
+import {create} from "zustand";
 import PrismCode from "react-prism";
 import "prismjs";
 import "prismjs/components/prism-jsx.min";
@@ -12,6 +12,13 @@ const useStore = create((set) => ({
   multed: 1,
   multiplier: () => set((state) => ({ multed: state.multed*5 })),
 }));
+
+const useBearStore = create(
+  combine({ bears: 0 }, (set) => ({
+    increase: (by) => set((state) => ({ bears: state.bears + by })),
+  }))
+)
+
 
 function Counter() {
   const { count, inc } = useStore();
