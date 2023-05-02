@@ -12,7 +12,7 @@ function Controls() {
 
 function Counter() {
   const count = useStore(state => state.count)
-  return <h1>{count}</h1>  
+  return <h1>{count}</h1>  just testing some stuff out that's all haha
 }`
 
 export default code
