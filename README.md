@@ -1,2 +1,2 @@
-create-react app boilerplate detected,
+create-react-app boilerplate detected,
 opinion rejected 🤢🤢
